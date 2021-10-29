@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 #logo {
@@ -10,6 +11,8 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: inherit;
 }
 
 #navbar {
@@ -31,7 +34,6 @@ body {
 
   /*margin: 0;
   /* font-family: "Oswald", sans-serif; */
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 #navbar a:last-of-type {
@@ -67,6 +69,7 @@ body {
 #navbarfooter a:last-of-type {
   border: none;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -77,10 +80,12 @@ body {
 
 #parentSection {
   display: flex;
+  font-family: sans-serif;
 }
 
 #leftSection {
   width: 70vw;
+  font-family: sans-serif;
 }
 
 #rightSection {
@@ -91,4 +96,30 @@ body {
 
 #image {
   width: 100%;
+}
+
+.articleWrap {
+  display: flex;
+  width: 30vw;
+}
+
+.articleWrap img {
+    width: 10vw;
+    /* object-fit: cover; */
+    height: 15vh;
+}
+
+#button button{
+  border:none;
+  background-color: rgb(15, 56, 86);
+}
+
+.featuredArticles{
+    background-color:  rgb(15, 56, 86);
+    color: white;
+}
+
+.articleText{
+    width: 20vw;
+    
 }
